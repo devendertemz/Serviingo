@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ourprogram_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/cutdrwable"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/_1sdp"
+        app:contentPadding="0dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@color/grey"
+                android:src="@drawable/roundshape"
+                android:layout_margin="@dimen/_5sdp"
+
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textStyle="bold"
+                android:textColor="@color/grey_light"/>
+            <TextView
+                android:id="@+id/tvProffession"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvUsername"
+                android:layout_height="wrap_content"
+                android:text="The standerd Lorem ipsum?"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tvdesc"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvProffession"
+                android:layout_height="wrap_content"
+                android:text="The standerd Lorem ipsum?"
+                android:textColor="@color/grey_light"/>
+
+            <TextView
+                android:id="@+id/tvEditReview"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+
+                android:background="@color/addtocart"
+                android:gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Open"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/tvdesc"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  MEDIUM"
+                android:layout_below="@+id/view"
+                android:drawableLeft="@drawable/ic_dot"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                android:textColor="@color/grey_light"/>
+
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_toRightOf="@+id/tvU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Replied 12:PM "
+                android:layout_below="@+id/view"
+                android:drawableLeft="@drawable/dot_background"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/grey_light"/>
+
+            <TextView
+                android:id="@+id/tvticketId"
+                android:layout_toRightOf="@+id/dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TicketID :1211100"
+                android:layout_below="@+id/view"
+                android:drawableLeft="@drawable/dot_background"
+                android:textStyle="bold"
+                android:textColor="@color/grey_light"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

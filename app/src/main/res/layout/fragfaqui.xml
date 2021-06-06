@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvSaloonReview"
+        android:layout_below="@+id/tvRatings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sdp"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/teko_semibold"
+        android:layout_height="wrap_content"
+        android:text="Frequently Asked Questions"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/telex"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</LinearLayout>

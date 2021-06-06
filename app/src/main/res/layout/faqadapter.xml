@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/allui"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/faqheading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:text="FAQ?"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@drawable/gradientfaq"
+            />
+        <TextView
+            android:id="@+id/faqDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/termsandCondition"
+            android:textColor="@color/grey_"
+            android:textSize="@dimen/_15sdp"
+             />
+
+    </LinearLayout>
+</LinearLayout>

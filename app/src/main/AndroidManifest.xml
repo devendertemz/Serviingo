@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.serviingo.serviingo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SERVIINGO">
+        <activity android:name=".Activity.Dashboard"></activity>
+        <activity android:name=".view.SubsubCategory"></activity>
+        <activity android:name=".Activity.FinancialServiceBank"></activity>
+        <activity android:name=".Activity.FinancialServiceDetail"></activity>
+        <activity android:name=".Activity.FinancialCategory"></activity>
+        <activity android:name=".Activity.Addressbook"></activity>
+        <activity android:name=".Activity.cancellationPolicy"></activity>
+        <activity android:name=".Activity.TermsandCondition"></activity>
+        <activity android:name=".Activity.servicesSubCategory"></activity>
+        <activity android:name=".Activity.Privacypolicy"></activity>
+        <activity android:name=".Activity.newActivity"></activity>
+        <activity android:name=".Activity.ChangePasswordActivity"></activity>
+        <activity android:name=".Activity.FAQ"></activity>
+        <activity android:name=".Activity.covidTest"></activity>
+        <activity android:name=".Activity.Success"></activity>
+        <activity android:name=".Activity.CheckOut"></activity>
+        <activity android:name=".Activity.AppliencesCareServices"></activity>
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.VenderReg"></activity>
+        <activity android:name=".Activity.ReviewRatingActivity"></activity>
+        <activity android:name=".Activity.TestingAgreeCulturalUi"></activity>
+        <activity android:name=".Activity.SplashScreen"></activity>
+        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.ContactSupport"></activity>
+        <activity android:name=".Activity.subCategoryActivities"></activity>
+        <activity android:name=".Activity.RecentBooking"></activity>
+        <activity android:name=".Activity.AboutUs"></activity>
+        <activity android:name=".Activity.SignUpActivity"></activity>
+        <activity android:name=".Activity.MyWalletActivity">
+
+        </activity>
+        <activity android:name=".Activity.WelcomeActivity">
+
+        </activity>
+        <activity android:name=".Activity.OTPactivity"/>
+        <activity android:name=".Activity.primaryActivity">
+
+        </activity>
+        <activity android:name=".Activity.ChatActivity">
+
+        </activity>
+        <activity android:name=".Activity.Addones">
+
+        </activity>
+        <activity android:name=".Activity.ContactUsActivity"/>
+        <activity android:name=".Activity.Lowcontact">
+
+        </activity>
+        <activity android:name=".Activity.SelectService">
+
+        </activity>
+        <activity android:name=".Activity.FinancialService">
+
+        </activity>
+        <activity android:name=".Activity.AddressActivity">
+
+        </activity>
+        <activity android:name=".Activity.Addtocart">
+
+        </activity>
+        <activity android:name=".Activity.RefundPolicy">
+
+        </activity>
+        <activity android:name=".Activity.SubcategoryActivity"/>
+        <activity android:name=".Activity.ProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SERVIINGO</string>
+    <string name="register_as_professional"><u>Register as a Professional</u></string>
+
+    <string name="heading">Home / Lucknow</string>
+    <string name="texrHeading">Home Services, on demand.</string>
+    <string name="servicesheading"><u>Gardening, Electrical, Repairs, Massage, etc </u></string>
+    <string name="heading3">Top Services at home</string>
+    <string name="please_wait">Please wait</string>
+    <string name="heading4">Hygienic, Low-Contact Services  </string>
+    <string name="heading6">"\u00a9" 2014-20 Serve Easy Technologies India Pvt. Ltd.  </string>
+    <string name="heading5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </string>
+    <string name="price"> \u20B9 159.5 </string>
+    <string name="flatprice"> \u20B9 319 </string>
+    <string name="perprice"> 50 % OFF </string>
+    <string name="Vaxing"><u> Waxing </u> </string>
+
+    <string name="cancellationpollicy"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is not anything embarrassing hidden in the middle of text. </string>
+    <string name="faq1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="faq2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="pp">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,</string>
+    <string name="termsandCondition"><i><b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here,</b></i> content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </string>
+    <string name="feel_free_tocontact_us">If you have any issue, Feel free to contact us.</string>
+    <string name="success_msg">Congratulations, Your booking has been successfully created. Your Booking ID is: <b>ORD209686</b></string>
+
+
+    <!--    <Login>    -->
+
+    <string name="signup">Don\'t Have an account <font fgcolor='#C2185B'>Create an account</font></string>
+    <string name="clickhere">Verify OTP For Reset password <font fgcolor='#C2185B'>Click here</font></string>
+
+
+    <!--SignUp-->
+    <string name="extraAccount">Already have Account? <font fgcolor='#C2185B'>Login</font></string>
+    <string name="lucknow">Lucknow</string>
+    <string name="invite_your_friends_to_urban_company_services_they_get_rs_100_off_you_win_upto_rs_5000">Invite your Friends to Urban company Services.They get Rs 100 off .you win upto Rs 5000</string>
+    <string name="refer_and_get_free_services">Refer and get free services</string>
+    <string name="contact_info"><u>Contact Info</u></string>
+    <string name="_1st_floor_dayal_chamber_3_way_road_ram_mohan_rai_marg_hazratganj_lucknow_226001_u_p_india">1st Floor, Dayal Chamber, 3-Way Road, Ram Mohan Rai Marg, Hazratganj, Lucknow - 226001, U.P., India</string>
+    <string name="get_in_touch">Get in Touch</string>
+    <string name="change_password_you_can_change_your_password"><u><![CDATA[Change Password>You can change your Password]]></u></string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+
+    <string-array name="spinner">
+        <item>Lucknow</item>
+    </string-array>
+</resources>

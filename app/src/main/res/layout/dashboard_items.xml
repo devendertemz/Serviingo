@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/allsideborder"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/roboto"
+            android:gravity="left"
+            android:text="Special Chicken"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto"
+            android:gravity="left"
+            android:text="28-Dec-2020 12:40 PM"
+            android:textColor="@color/grey_"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:fontFamily="@font/roboto"
+            android:gravity="left"
+            android:text="Non Veg Items"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_orderDetail"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@id/tv_itemName"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/black_round_bg"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Order Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_cancelOrder"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_below="@id/tv_itemName"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/tv_orderDetail"
+            android:background="@drawable/reddrawable"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Cancel Order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/tv_orderDetail"
+            android:orientation="horizontal"
+
+            >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:background="@color/grey_" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="\u20B9 275"
+                android:textStyle="bold"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_pending"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight=".6"
+                android:background="@drawable/green_bg"
+                android:gravity="center"
+                android:text="Pending"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_addOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:fontFamily="@font/roboto"
+            android:gravity="left"
+            android:text="Add On Services"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_addOnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addOn"
+            android:fontFamily="@font/roboto"
+            android:gravity="left"
+            android:paddingTop="@dimen/_2sdp"
+            android:text="Special Chicken"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

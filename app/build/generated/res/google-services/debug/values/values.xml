@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">262144639986-qj5vm512embu2gl5tsn6e1omiocose18.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">262144639986</string>
+    <string name="google_api_key" translatable="false">AIzaSyCdeyqjZjsuDzvjRcjX6R3IyD8GibPZKGE</string>
+    <string name="google_app_id" translatable="false">1:262144639986:android:6b6440de95c703f575e16b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCdeyqjZjsuDzvjRcjX6R3IyD8GibPZKGE</string>
+    <string name="google_storage_bucket" translatable="false">serviingo.appspot.com</string>
+    <string name="project_id" translatable="false">serviingo</string>
+</resources>

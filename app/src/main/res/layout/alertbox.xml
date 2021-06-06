@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/profile_image"
+        android:fontFamily="@font/teko"
+        android:padding="@dimen/_5sdp"
+        android:text="Add Address"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:fontFamily="@font/teko"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_8sdp"
+        android:text="Change Your Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPackage"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/allui"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/_5sdp"
+                app:contentPadding="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFullAddrtess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Full Address" />
+
+                    <EditText
+                        android:id="@+id/etFullAddress"
+                        android:layout_below="@+id/tvFullAddrtess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/allsideborder"
+                        android:hint="Full Address"
+
+                        android:paddingLeft="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvLandmark"
+                        android:layout_below="@+id/etFullAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Landmark(Optional)" />
+
+                    <EditText
+                        android:id="@+id/etLandmark"
+                        android:layout_below="@+id/tvLandmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/allsideborder"
+                        android:hint="LandMark (Optional)"
+                        android:paddingLeft="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvPincode"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvLandmark"
+                        android:layout_below="@+id/etFullAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Pincode" />
+
+                    <EditText
+                        android:id="@+id/etpincode"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/etLandmark"
+                        android:layout_below="@+id/tvPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/allsideborder"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvState"
+                        android:layout_below="@+id/etpincode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="State" />
+
+                    <Spinner
+                        android:id="@+id/courseSpinner"
+                        android:layout_below="@+id/tvState"
+
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/_5sdp"
+
+                        android:background="@drawable/allsideborder"
+                        android:foreground="@drawable/shape_drop_down_normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.498" />
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tvState"
+                        android:layout_below="@+id/etpincode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="City" />
+
+                    <Spinner
+                        android:id="@+id/cityspinner"
+                        android:layout_below="@+id/tvCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/courseSpinner"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/allsideborder"
+                        android:foreground="@drawable/shape_drop_down_normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.498" />
+
+                    <TextView
+                        android:id="@+id/tvAddressType"
+                        android:layout_below="@+id/cityspinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Address Type" />
+
+                    <LinearLayout
+                        android:id="@+id/llrg"
+                        android:layout_below="@+id/tvAddressType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Home" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Work" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Other" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_below="@+id/llrg"
+                        android:id="@+id/btn"
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/submitbutton"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="+ Add Address "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+</LinearLayout>

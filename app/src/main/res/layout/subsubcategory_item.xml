@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/ll_back"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:background="@drawable/rect_light_blue"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_pack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="left"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textAllCaps="true"
+        android:text="Low Contact Roll on Waxing"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+</LinearLayout>

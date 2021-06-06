@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <!-- com.groomingtechssolution.mdvtiindia.View background color -->
+<!--    <solid-->
+<!--        android:color="#02426e"-->
+<!--        >-->
+<!--    </solid>-->
+    <gradient
+        android:startColor="#60ade2"
+        android:centerColor="#02426e"
+        android:endColor="#02426e"
+        />
+
+    <!-- com.groomingtechssolution.mdvtiindia.View border color and width -->
+<!--    <stroke-->
+<!--        android:width="1dp"-->
+<!--        android:color="#02426e" >-->
+<!--    </stroke>-->
+
+    <!-- The radius makes the corners rounded -->
+<!--    <corners-->
+<!--        android:topLeftRadius="@dimen/_10sdp"-->
+<!--        android:topRightRadius="@dimen/_10sdp"-->
+<!--        android:bottomLeftRadius="1dp"-->
+<!--        android:bottomRightRadius="1dp">-->
+<!--    </corners>-->
+
+</shape>

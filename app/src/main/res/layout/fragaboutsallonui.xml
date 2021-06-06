@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/allsideborder"
+    android:padding="@dimen/_5sdp">
+    <TextView
+        android:id="@+id/tvSaloonReview"
+        android:layout_below="@+id/tvRatings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sdp"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/teko_semibold"
+        android:layout_height="wrap_content"
+        android:text="All About Serve Easy Sallon for Her"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grey_light"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_below="@+id/tvSaloonReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/teko_semibold"
+        android:text="Saloon For Her in Lucknow"/>
+
+<TextView
+    android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="We provide best of class beauty and sloon services for female."/>
+
+</LinearLayout>

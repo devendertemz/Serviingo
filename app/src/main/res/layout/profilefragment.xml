@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/new_header" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="My Profile >Your Profile setting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_8sdp"
+        android:fontFamily="@font/teko"
+        android:text="Update Profile Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPackage"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="@dimen/_5sdp"
+                android:background="@drawable/allui"
+                app:contentPadding="0dp">
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230sdp"
+                android:src="@drawable/refer_icon"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_8sdp"
+                android:text="Refer and get free services"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvreferdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Invite your friends to Urban Company services.They get Rs. 100 off.You win upto Rs. 5000."
+                android:textColor="@color/black"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_16sdp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp">
+
+                <TextView
+                    android:id="@+id/searchhview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/allsideborder"
+                    android:gravity="center"
+                    android:text="What are you looking ?" />
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="Send"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/searchhview"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/google_play" />
+
+                <TextView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/searchhview"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/app_store" />
+
+            </RelativeLayout>
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/black"
+                  android:orientation="vertical">
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:id="@+id/about"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="@dimen/_5sdp"
+                          android:layout_marginLeft="@dimen/_45sdp"
+                          android:text="About"
+                          android:textColor="@color/white" />
+
+                      <TextView
+                          android:id="@+id/termsandcond"
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/about"
+                          android:layout_alignParentRight="true"
+                          android:layout_margin="@dimen/_5sdp"
+                          android:text="Terms And Conditions"
+                          android:textColor="@color/white" />
+
+                      <TextView
+                          android:id="@+id/tvprivacyPolicy"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/termsandcond"
+                          android:layout_margin="@dimen/_5sdp"
+                          android:layout_marginLeft="@dimen/_45sdp"
+                          android:text="Privacy Policy"
+                          android:textColor="@color/white" />
+
+                      <TextView
+                          android:id="@+id/tvfaq"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/tvprivacyPolicy"
+                          android:layout_alignParentRight="true"
+                          android:layout_margin="@dimen/_5sdp"
+                          android:text="FAQ"
+                          android:textColor="@color/white" />
+
+                      <TextView
+                          android:id="@+id/tvrefundandcancellation"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/tvprivacyPolicy"
+                          android:layout_margin="@dimen/_5sdp"
+                          android:layout_marginLeft="@dimen/_45sdp"
+                          android:text="Refund and Cancellation Policy "
+                          android:textColor="@color/white" />
+
+                      <TextView
+                          android:id="@+id/tvContactus"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/tvfaq"
+                          android:layout_alignParentRight="true"
+                          android:layout_margin="@dimen/_5sdp"
+                          android:text="Contact Us"
+                          android:textColor="@color/white" />
+                  </RelativeLayout>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Know More About Us"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_18sdp" />
+
+                  <TextView
+                      android:padding="@dimen/_5sdp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/heading5"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_60sdp"
+                      android:text="Quick Links"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_20sdp"
+                      android:layout_marginTop="@dimen/_2sdp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+
+                      android:text="Terms and Conditions"
+
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+
+                      android:text="Privacy Policy"
+
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+
+                      android:text="FAQ"
+
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+
+                      android:text="Contact Us"
+
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+
+                      android:text="Support"
+
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_marginBottom="@dimen/_5sdp"
+                      android:text="Services"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+
+                      android:text="Vase"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+                      android:text="Plants Decoration"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+                      android:text="Transformer call Repeting"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+                      android:text="Transformer Dialing"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_1sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/_25sdp"
+                      android:text="Light Connection"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+
+              </LinearLayout>
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/_2sdp"
+                  android:layout_below="@+id/search"
+                  android:background="@color/white"/>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/black">
+
+                  <TextView
+                      android:id="@+id/tvahemdabad"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_45sdp"
+                      android:text="Ahemadabad"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvbengluru"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:text="Benglore"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvDelhiCR"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvahemdabad"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_45sdp"
+                      android:text="Delhi NCR"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvChandigarh"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvbengluru"
+                      android:layout_alignParentRight="true"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:text="Chandigarh Tricity"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvHyderabad"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_below="@+id/tvDelhiCR"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_45sdp"
+                      android:text="Hyderabad"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvkolkata"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvChandigarh"
+                      android:layout_alignParentRight="true"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:text="Kolkata"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvNagpur"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_below="@+id/tvHyderabad"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_45sdp"
+                      android:text="Nagpur"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvLudhiyana"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvkolkata"
+                      android:layout_alignParentRight="true"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:text="Ludhiyana"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvVadodara"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_below="@+id/tvNagpur"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_45sdp"
+                      android:text="Vadodara"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvKolkata"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvLudhiyana"
+                      android:layout_alignParentRight="true"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:text="Kolkata"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvSurat"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_below="@+id/tvVadodara"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_marginLeft="@dimen/_45sdp"
+                      android:text="Surat"
+                      android:textColor="@color/white" />
+
+                  <TextView
+                      android:id="@+id/tvIndore"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/tvKolkata"
+                      android:layout_alignParentRight="true"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:text="Indore"
+                      android:textColor="@color/white" />
+              </RelativeLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/black"
+                  android:orientation="vertical">
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_2sdp"
+                      android:layout_below="@+id/search"
+                      android:background="@color/white"/>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_25sdp"
+                      android:gravity="center"
+                      android:text="@string/heading6"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/_40sdp">
+
+                      <ImageView
+                          android:id="@+id/ivPinterest"
+                          android:layout_width="@dimen/_20sdp"
+                          android:layout_height="@dimen/_20sdp"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_alignParentRight="true"
+                          android:layout_margin="@dimen/_2sdp"
+                          android:src="@drawable/ic_pinterest" />
+
+                      <ImageView
+                          android:id="@+id/ivYoutube"
+                          android:layout_width="@dimen/_20sdp"
+                          android:layout_height="@dimen/_20sdp"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_margin="@dimen/_2sdp"
+                          android:layout_toLeftOf="@+id/ivPinterest"
+                          android:src="@drawable/ic_youtube" />
+
+                      <ImageView
+                          android:id="@+id/ivinsta"
+                          android:layout_width="@dimen/_20sdp"
+                          android:layout_height="@dimen/_20sdp"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_margin="@dimen/_2sdp"
+                          android:layout_toLeftOf="@+id/ivYoutube"
+                          android:src="@drawable/ic_instagram_logo" />
+
+                      <ImageView
+                          android:id="@+id/ivtwitter"
+                          android:layout_width="@dimen/_20sdp"
+                          android:layout_height="@dimen/_20sdp"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_margin="@dimen/_2sdp"
+                          android:layout_toLeftOf="@+id/ivinsta"
+                          android:src="@drawable/ic_twitter" />
+
+                      <ImageView
+                          android:id="@+id/ivfacebook"
+                          android:layout_width="@dimen/_20sdp"
+                          android:layout_height="@dimen/_20sdp"
+                          android:layout_margin="@dimen/_2sdp"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_toLeftOf="@+id/ivtwitter"
+                          android:src="@drawable/ic_facebook" />
+
+                  </RelativeLayout>
+              </LinearLayout>
+  -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

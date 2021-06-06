@@ -1,0 +1,324 @@
+com/serviingo/serviingo/Activity/TermsandCondition.java
+ com.serviingo.serviingo.Activity.TermsandCondition
+ com.serviingo.serviingo.Activity.TermsandCondition$1
+com/serviingo/serviingo/Activity/helpCenter.java
+ com.serviingo.serviingo.Activity.helpCenter
+com/serviingo/serviingo/Rtrofit/ApiManager.java
+ com.serviingo.serviingo.Rtrofit.ApiManager
+com/serviingo/serviingo/Activity/fragFAQ.java
+ com.serviingo.serviingo.Activity.fragFAQ
+com/serviingo/serviingo/Activity/primaryActivity.java
+ com.serviingo.serviingo.Activity.primaryActivity
+com/serviingo/serviingo/Activity/Success.java
+ com.serviingo.serviingo.Activity.Success
+ com.serviingo.serviingo.Activity.Success$1
+com/serviingo/serviingo/Activity/Addtocart.java
+ com.serviingo.serviingo.Activity.Addtocart
+ com.serviingo.serviingo.Activity.Addtocart$1
+ com.serviingo.serviingo.Activity.Addtocart$2
+com/serviingo/serviingo/Activity/fragHimSalon.java
+ com.serviingo.serviingo.Activity.fragHimSalon
+com/serviingo/serviingo/Rtrofit/ApiClientt.java
+ com.serviingo.serviingo.Rtrofit.ApiClientt
+com/serviingo/serviingo/Activity/RefundPolicy.java
+ com.serviingo.serviingo.Activity.RefundPolicy
+ com.serviingo.serviingo.Activity.RefundPolicy$1
+com/serviingo/serviingo/Activity/fragAboutSaloonForhim.java
+ com.serviingo.serviingo.Activity.fragAboutSaloonForhim
+com/serviingo/serviingo/utils/AppUtils.java
+ com.serviingo.serviingo.utils.AppUtils
+ com.serviingo.serviingo.utils.AppUtils$1
+ com.serviingo.serviingo.utils.AppUtils$2
+ com.serviingo.serviingo.utils.AppUtils$3
+com/serviingo/serviingo/Activity/Dashboard.java
+ com.serviingo.serviingo.Activity.Dashboard
+ com.serviingo.serviingo.Activity.Dashboard$1
+ com.serviingo.serviingo.Activity.Dashboard$DashboardAdapter
+ com.serviingo.serviingo.Activity.Dashboard$DashboardAdapter$WalletHolder
+com/serviingo/serviingo/Activity/AppliencesCareServices.java
+ com.serviingo.serviingo.Activity.AppliencesCareServices
+ com.serviingo.serviingo.Activity.AppliencesCareServices$1
+com/serviingo/serviingo/CommonControlerApi/DoMyprofilePresenter.java
+ com.serviingo.serviingo.CommonControlerApi.DoMyprofilePresenter
+ com.serviingo.serviingo.CommonControlerApi.DoMyprofilePresenter$1
+ com.serviingo.serviingo.CommonControlerApi.DoMyprofilePresenter$DoMyprofileView
+com/serviingo/serviingo/Activity/FinancialCategory.java
+ com.serviingo.serviingo.Activity.FinancialCategory
+com/serviingo/serviingo/Adapterr/StateSpinnerAdapter.java
+ com.serviingo.serviingo.Adapterr.StateSpinnerAdapter
+com/serviingo/serviingo/Database/DataBaseHelper.java
+ com.serviingo.serviingo.Database.DataBaseHelper
+com/serviingo/serviingo/modelrepo/Responsee/Profile_Repo.java
+ com.serviingo.serviingo.modelrepo.Responsee.Profile_Repo
+ com.serviingo.serviingo.modelrepo.Responsee.Profile_Repo$Data
+ com.serviingo.serviingo.modelrepo.Responsee.Profile_Repo$Data$Profile
+com/serviingo/serviingo/view/BaseActivity.java
+ com.serviingo.serviingo.view.BaseActivity
+com/serviingo/serviingo/Activity/FAQ.java
+ com.serviingo.serviingo.Activity.FAQ
+ com.serviingo.serviingo.Activity.FAQ$1
+ com.serviingo.serviingo.Activity.FAQ$FAQAdapter
+ com.serviingo.serviingo.Activity.FAQ$FAQAdapter$WalletHolder
+com/serviingo/serviingo/Activity/Lowcontact.java
+ com.serviingo.serviingo.Activity.Lowcontact
+ com.serviingo.serviingo.Activity.Lowcontact$1
+ com.serviingo.serviingo.Activity.Lowcontact$2
+ com.serviingo.serviingo.Activity.Lowcontact$DataAdapter
+ com.serviingo.serviingo.Activity.Lowcontact$DataAdapter$1
+ com.serviingo.serviingo.Activity.Lowcontact$DataAdapter$WalletHolder
+ com.serviingo.serviingo.Activity.Lowcontact$PackagesAdapter
+ com.serviingo.serviingo.Activity.Lowcontact$PackagesAdapter$1
+ com.serviingo.serviingo.Activity.Lowcontact$PackagesAdapter$WalletHolder
+com/serviingo/serviingo/Activity/FinancialServiceBank.java
+ com.serviingo.serviingo.Activity.FinancialServiceBank
+com/serviingo/serviingo/Activity/Vendorregister.java
+ com.serviingo.serviingo.Activity.Vendorregister
+com/serviingo/serviingo/Activity/OTPactivity.java
+ com.serviingo.serviingo.Activity.OTPactivity
+com/serviingo/serviingo/Activity/newActivity.java
+ com.serviingo.serviingo.Activity.newActivity
+ com.serviingo.serviingo.Activity.newActivity$1
+ com.serviingo.serviingo.Activity.newActivity$ReviewsAdapter
+ com.serviingo.serviingo.Activity.newActivity$ReviewsAdapter$WalletHolder
+com/serviingo/serviingo/Activity/FinancialServiceDetail.java
+ com.serviingo.serviingo.Activity.FinancialServiceDetail
+com/serviingo/serviingo/Activity/SignUpActivity.java
+ com.serviingo.serviingo.Activity.SignUpActivity
+com/serviingo/serviingo/view/SubsubCategory.java
+ com.serviingo.serviingo.view.SubsubCategory
+ com.serviingo.serviingo.view.SubsubCategory$1
+ com.serviingo.serviingo.view.SubsubCategory$PackAdapter
+ com.serviingo.serviingo.view.SubsubCategory$PackAdapter$1
+ com.serviingo.serviingo.view.SubsubCategory$PackAdapter$WalletHolder
+com/serviingo/serviingo/Activity/cancellationPolicy.java
+ com.serviingo.serviingo.Activity.cancellationPolicy
+ com.serviingo.serviingo.Activity.cancellationPolicy$1
+com/serviingo/serviingo/Activity/covidTest.java
+ com.serviingo.serviingo.Activity.covidTest
+ com.serviingo.serviingo.Activity.covidTest$1
+com/serviingo/serviingo/CommonControlerApi/ChangePasswordPresenter.java
+ com.serviingo.serviingo.CommonControlerApi.ChangePasswordPresenter
+ com.serviingo.serviingo.CommonControlerApi.ChangePasswordPresenter$1
+ com.serviingo.serviingo.CommonControlerApi.ChangePasswordPresenter$ChangePasswordView
+com/serviingo/serviingo/Common/CustomLoader.java
+ com.serviingo.serviingo.Common.CustomLoader
+com/serviingo/serviingo/Activity/Privacypolicy.java
+ com.serviingo.serviingo.Activity.Privacypolicy
+ com.serviingo.serviingo.Activity.Privacypolicy$1
+com/serviingo/serviingo/Database/AppSettings.java
+ com.serviingo.serviingo.Database.AppSettings
+com/serviingo/serviingo/utils/CardAdapter.java
+ com.serviingo.serviingo.utils.CardAdapter
+com/serviingo/serviingo/view/BaseFragment.java
+ com.serviingo.serviingo.view.BaseFragment
+com/serviingo/serviingo/Common/Config.java
+ com.serviingo.serviingo.Common.Config
+com/serviingo/serviingo/Activity/AddressActivity.java
+ com.serviingo.serviingo.Activity.AddressActivity
+ com.serviingo.serviingo.Activity.AddressActivity$1
+ com.serviingo.serviingo.Activity.AddressActivity$AdressAdapter
+ com.serviingo.serviingo.Activity.AddressActivity$AdressAdapter$WalletHolder
+com/serviingo/serviingo/Activity/homeFragment.java
+ com.serviingo.serviingo.Activity.homeFragment
+ com.serviingo.serviingo.Activity.homeFragment$1
+ com.serviingo.serviingo.Activity.homeFragment$ReviewsAdapter
+ com.serviingo.serviingo.Activity.homeFragment$ReviewsAdapter$WalletHolder
+com/serviingo/serviingo/Activity/ContactSupport.java
+ com.serviingo.serviingo.Activity.ContactSupport
+com/serviingo/serviingo/modelrepo/request/Changepassword_request.java
+ com.serviingo.serviingo.modelrepo.request.Changepassword_request
+com/serviingo/serviingo/Activity/CheckOut.java
+ com.serviingo.serviingo.Activity.CheckOut
+ com.serviingo.serviingo.Activity.CheckOut$1
+ com.serviingo.serviingo.Activity.CheckOut$2
+com/serviingo/serviingo/Activity/RecentBooking.java
+ com.serviingo.serviingo.Activity.RecentBooking
+ com.serviingo.serviingo.Activity.RecentBooking$1
+ com.serviingo.serviingo.Activity.RecentBooking$RBAdapter
+ com.serviingo.serviingo.Activity.RecentBooking$RBAdapter$WalletHolder
+com/serviingo/serviingo/storage/SharedPrefManager.java
+ com.serviingo.serviingo.storage.SharedPrefManager
+com/serviingo/serviingo/Activity/TestingAgreeCulturalUi.java
+ com.serviingo.serviingo.Activity.TestingAgreeCulturalUi
+com/serviingo/serviingo/Activity/WelcomeActivity.java
+ com.serviingo.serviingo.Activity.WelcomeActivity
+com/serviingo/serviingo/Activity/myBooking.java
+ com.serviingo.serviingo.Activity.myBooking
+ com.serviingo.serviingo.Activity.myBooking$1
+ com.serviingo.serviingo.Activity.myBooking$ReviewsAdapter
+ com.serviingo.serviingo.Activity.myBooking$ReviewsAdapter$WalletHolder
+com/serviingo/serviingo/utils/AppConstants.java
+ com.serviingo.serviingo.utils.AppConstants
+com/serviingo/serviingo/CommonControlerApi/DoLogoutPresenter.java
+ com.serviingo.serviingo.CommonControlerApi.DoLogoutPresenter
+ com.serviingo.serviingo.CommonControlerApi.DoLogoutPresenter$1
+ com.serviingo.serviingo.CommonControlerApi.DoLogoutPresenter$DoLogoutView
+com/serviingo/serviingo/Activity/SelectService.java
+ com.serviingo.serviingo.Activity.SelectService
+com/serviingo/serviingo/Activity/ChangePasswordActivity.java
+ com.serviingo.serviingo.Activity.ChangePasswordActivity
+com/serviingo/serviingo/Activity/Profile.java
+ com.serviingo.serviingo.Activity.Profile
+com/serviingo/serviingo/Activity/VenderReg.java
+ com.serviingo.serviingo.Activity.VenderReg
+ com.serviingo.serviingo.Activity.VenderReg$1
+ com.serviingo.serviingo.Activity.VenderReg$1$1
+ com.serviingo.serviingo.Activity.VenderReg$2
+ com.serviingo.serviingo.Activity.VenderReg$2$1
+ com.serviingo.serviingo.Activity.VenderReg$3
+com/serviingo/serviingo/Database/DatabaseController.java
+ com.serviingo.serviingo.Database.DatabaseController
+com/serviingo/serviingo/Activity/LoginActivity.java
+ com.serviingo.serviingo.Activity.LoginActivity
+ com.serviingo.serviingo.Activity.LoginActivity$1
+ com.serviingo.serviingo.Activity.LoginActivity$2
+com/serviingo/serviingo/Activity/servicesSubCategory.java
+ com.serviingo.serviingo.Activity.servicesSubCategory
+ com.serviingo.serviingo.Activity.servicesSubCategory$1
+com/serviingo/serviingo/storage/User_login.java
+ com.serviingo.serviingo.storage.User_login
+com/serviingo/serviingo/Activity/SplashScreen.java
+ com.serviingo.serviingo.Activity.SplashScreen
+ com.serviingo.serviingo.Activity.SplashScreen$1
+com/serviingo/serviingo/modelrepo/request/VandorRegs.java
+ com.serviingo.serviingo.modelrepo.request.VandorRegs
+com/serviingo/serviingo/modelrepo/Responsee/VandorRepo.java
+ com.serviingo.serviingo.modelrepo.Responsee.VandorRepo
+ com.serviingo.serviingo.modelrepo.Responsee.VandorRepo$Data
+com/serviingo/serviingo/Common/NotificationUtils.java
+ com.serviingo.serviingo.Common.NotificationUtils
+com/serviingo/serviingo/Activity/SubcategoryActivity.java
+ com.serviingo.serviingo.Activity.SubcategoryActivity
+ com.serviingo.serviingo.Activity.SubcategoryActivity$1
+ com.serviingo.serviingo.Activity.SubcategoryActivity$2
+ com.serviingo.serviingo.Activity.SubcategoryActivity$3
+ com.serviingo.serviingo.Activity.SubcategoryActivity$DataAdapter
+ com.serviingo.serviingo.Activity.SubcategoryActivity$DataAdapter$1
+ com.serviingo.serviingo.Activity.SubcategoryActivity$DataAdapter$WalletHolder
+ com.serviingo.serviingo.Activity.SubcategoryActivity$GridAdapter
+ com.serviingo.serviingo.Activity.SubcategoryActivity$GridAdapter$1
+ com.serviingo.serviingo.Activity.SubcategoryActivity$GridAdapter$WalletHolder
+com/serviingo/serviingo/Activity/FinancialService.java
+ com.serviingo.serviingo.Activity.FinancialService
+com/serviingo/serviingo/Activity/Addones.java
+ com.serviingo.serviingo.Activity.Addones
+ com.serviingo.serviingo.Activity.Addones$1
+ com.serviingo.serviingo.Activity.Addones$GridAdapter
+ com.serviingo.serviingo.Activity.Addones$GridAdapter$1
+ com.serviingo.serviingo.Activity.Addones$GridAdapter$2
+ com.serviingo.serviingo.Activity.Addones$GridAdapter$WalletHolder
+com/serviingo/serviingo/Activity/Addressbook.java
+ com.serviingo.serviingo.Activity.Addressbook
+ com.serviingo.serviingo.Activity.Addressbook$1
+com/serviingo/serviingo/CommonControlerApi/VandorRegPresenter.java
+ com.serviingo.serviingo.CommonControlerApi.VandorRegPresenter
+ com.serviingo.serviingo.CommonControlerApi.VandorRegPresenter$1
+ com.serviingo.serviingo.CommonControlerApi.VandorRegPresenter$VandorRegView
+com/serviingo/serviingo/Activity/SupportTicketsActivity.java
+ com.serviingo.serviingo.Activity.SupportTicketsActivity
+ com.serviingo.serviingo.Activity.SupportTicketsActivity$1
+ com.serviingo.serviingo.Activity.SupportTicketsActivity$SupportAdapter
+ com.serviingo.serviingo.Activity.SupportTicketsActivity$SupportAdapter$WalletHolder
+com/serviingo/serviingo/model/StateModel.java
+ com.serviingo.serviingo.model.StateModel
+com/serviingo/serviingo/modelrepo/request/UserReg_Request.java
+ com.serviingo.serviingo.modelrepo.request.UserReg_Request
+com/serviingo/serviingo/Activity/ContactUsActivity.java
+ com.serviingo.serviingo.Activity.ContactUsActivity
+ com.serviingo.serviingo.Activity.ContactUsActivity$1
+ com.serviingo.serviingo.Activity.ContactUsActivity$2
+com/serviingo/serviingo/Activity/FragHowItWorks.java
+ com.serviingo.serviingo.Activity.FragHowItWorks
+ com.serviingo.serviingo.Activity.FragHowItWorks$1
+ com.serviingo.serviingo.Activity.FragHowItWorks$HorizontalCategoryAdapter
+ com.serviingo.serviingo.Activity.FragHowItWorks$HorizontalCategoryAdapter$WalletHolder
+com/serviingo/serviingo/Common/SimpleHTTPConnection.java
+ com.serviingo.serviingo.Common.SimpleHTTPConnection
+com/serviingo/serviingo/model/CategoryModel.java
+ com.serviingo.serviingo.model.CategoryModel
+com/serviingo/serviingo/modelrepo/Responsee/State_Repo.java
+ com.serviingo.serviingo.modelrepo.Responsee.State_Repo
+ com.serviingo.serviingo.modelrepo.Responsee.State_Repo$Data
+ com.serviingo.serviingo.modelrepo.Responsee.State_Repo$State
+com/serviingo/serviingo/utils/CheckInternetConnection.java
+ com.serviingo.serviingo.utils.CheckInternetConnection
+ com.serviingo.serviingo.utils.CheckInternetConnection$1
+com/serviingo/serviingo/Activity/AboutUs.java
+ com.serviingo.serviingo.Activity.AboutUs
+ com.serviingo.serviingo.Activity.AboutUs$1
+com/serviingo/serviingo/CommonControlerApi/CategoriesPresenter.java
+ com.serviingo.serviingo.CommonControlerApi.CategoriesPresenter
+ com.serviingo.serviingo.CommonControlerApi.CategoriesPresenter$1
+ com.serviingo.serviingo.CommonControlerApi.CategoriesPresenter$CategoriesView
+com/serviingo/serviingo/Database/OSettings.java
+ com.serviingo.serviingo.Database.OSettings
+com/serviingo/serviingo/Activity/subCategoryActivities.java
+ com.serviingo.serviingo.Activity.subCategoryActivities
+ com.serviingo.serviingo.Activity.subCategoryActivities$1
+ com.serviingo.serviingo.Activity.subCategoryActivities$PackAdapter
+ com.serviingo.serviingo.Activity.subCategoryActivities$PackAdapter$1
+ com.serviingo.serviingo.Activity.subCategoryActivities$PackAdapter$WalletHolder
+ com.serviingo.serviingo.Activity.subCategoryActivities$PackAdapter1
+ com.serviingo.serviingo.Activity.subCategoryActivities$PackAdapter1$1
+ com.serviingo.serviingo.Activity.subCategoryActivities$PackAdapter1$WalletHolder
+ com.serviingo.serviingo.Activity.subCategoryActivities$ReviewsAdapter
+ com.serviingo.serviingo.Activity.subCategoryActivities$ReviewsAdapter$WalletHolder
+com/serviingo/serviingo/Adapterr/CategorySpinnerAdapter.java
+ com.serviingo.serviingo.Adapterr.CategorySpinnerAdapter
+com/serviingo/serviingo/Adapterr/CitySpinnerAdapter.java
+ com.serviingo.serviingo.Adapterr.CitySpinnerAdapter
+com/serviingo/serviingo/Activity/ReviewRatingActivity.java
+ com.serviingo.serviingo.Activity.ReviewRatingActivity
+ com.serviingo.serviingo.Activity.ReviewRatingActivity$CustomDialogClass
+ com.serviingo.serviingo.Activity.ReviewRatingActivity$ViewDialog
+ com.serviingo.serviingo.Activity.ReviewRatingActivity$ViewDialog$1
+com/serviingo/serviingo/Rtrofit/UserService.java
+ com.serviingo.serviingo.Rtrofit.UserService
+com/serviingo/serviingo/model/CityModel.java
+ com.serviingo.serviingo.model.CityModel
+com/serviingo/serviingo/BuildConfig.java
+ com.serviingo.serviingo.BuildConfig
+com/serviingo/serviingo/Common/Preferences.java
+ com.serviingo.serviingo.Common.Preferences
+com/serviingo/serviingo/CommonControlerApi/UserRegisterPresenter.java
+ com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter
+ com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter$1
+ com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter$UserRegisterView
+com/serviingo/serviingo/Activity/ChatActivity.java
+ com.serviingo.serviingo.Activity.ChatActivity
+com/serviingo/serviingo/Activity/MyWalletActivity.java
+ com.serviingo.serviingo.Activity.MyWalletActivity
+ com.serviingo.serviingo.Activity.MyWalletActivity$1
+ com.serviingo.serviingo.Activity.MyWalletActivity$WalletAdapter
+ com.serviingo.serviingo.Activity.MyWalletActivity$WalletAdapter$WalletHolder
+com/serviingo/serviingo/utils/AppUrls.java
+ com.serviingo.serviingo.utils.AppUrls
+com/serviingo/serviingo/Activity/ProfileActivity.java
+ com.serviingo.serviingo.Activity.ProfileActivity
+ com.serviingo.serviingo.Activity.ProfileActivity$1
+ com.serviingo.serviingo.Activity.ProfileActivity$1$1
+ com.serviingo.serviingo.Activity.ProfileActivity$2
+ com.serviingo.serviingo.Activity.ProfileActivity$2$1
+com/serviingo/serviingo/Activity/MainActivity.java
+ com.serviingo.serviingo.Activity.MainActivity
+ com.serviingo.serviingo.Activity.MainActivity$1
+ com.serviingo.serviingo.Activity.MainActivity$10
+ com.serviingo.serviingo.Activity.MainActivity$2
+ com.serviingo.serviingo.Activity.MainActivity$3
+ com.serviingo.serviingo.Activity.MainActivity$4
+ com.serviingo.serviingo.Activity.MainActivity$5
+ com.serviingo.serviingo.Activity.MainActivity$6
+ com.serviingo.serviingo.Activity.MainActivity$7
+ com.serviingo.serviingo.Activity.MainActivity$8
+ com.serviingo.serviingo.Activity.MainActivity$9
+ com.serviingo.serviingo.Activity.MainActivity$CategoryAdapter
+ com.serviingo.serviingo.Activity.MainActivity$CategoryAdapter$1
+ com.serviingo.serviingo.Activity.MainActivity$CategoryAdapter$WalletHolder
+ com.serviingo.serviingo.Activity.MainActivity$GridCategoryAdapter
+ com.serviingo.serviingo.Activity.MainActivity$GridCategoryAdapter$WalletHolder
+ com.serviingo.serviingo.Activity.MainActivity$HorizontalCategoryAdapter
+ com.serviingo.serviingo.Activity.MainActivity$HorizontalCategoryAdapter$WalletHolder
+ com.serviingo.serviingo.Activity.MainActivity$ImageSliderPagerAdapter
+ com.serviingo.serviingo.Activity.MainActivity$ViewPagerAdapter
+ com.serviingo.serviingo.Activity.MainActivity$ViewPagerAdapterMiddleUpper
+ com.serviingo.serviingo.Activity.MainActivity$ViewPagerAdapterSpolight

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:fontFamily="@font/teko_semibold"
+        android:gravity="center|bottom"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_35sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="Register now to access your account! "
+        android:textColor="@color/grey_light"
+        android:textSize="@dimen/_14sdp" />
+    <EditText
+        android:id="@+id/etReferralId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittextbox"
+        android:gravity="center"
+        android:hint="Enter Referral Id"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittextbox"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittextbox"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittextbox"
+        android:gravity="center"
+        android:maxLength="10"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittextbox"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/edittextbox"
+        android:gravity="center"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/submitbutton"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Create an Account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/teko_semibold"
+            android:gravity="center"
+            android:text="@string/extraAccount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+</LinearLayout>

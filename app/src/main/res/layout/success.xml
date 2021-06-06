@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_95sdp"
+        android:src="@drawable/ic_checked" />
+
+    <TextView
+        android:id="@+id/tvChoosePaymentMethodLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:fontFamily="@font/oswald"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Success"
+        android:textColor="#0ebf19"
+        android:textSize="@dimen/_45sdp"
+         />
+
+    <TextView
+        android:id="@+id/tvsubmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChoosePaymentMethodLogin"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@color/black_text"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/success_msg"
+        android:textSize="@dimen/_16sdp"
+         />
+
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsubmoney"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_light_blue"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Go Back To My Booking"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+</RelativeLayout>

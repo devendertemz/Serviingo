@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_125sdp"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:foreground="@drawable/ic_instagram_logo"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+       <!-- <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading"
+            android:id="@+id/textView37"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progress" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:numStars="5"
+    android:stepSize="1.0"
+    android:id="@+id/rating"
+    android:scaleX="0.5"
+    android:scaleY="0.5"
+    style="?android:attr/ratingBarStyleIndicator"
+    />
+    <TextView
+        android:id="@+id/tvRatings"
+        android:layout_below="@+id/rating"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:layout_height="wrap_content"
+        android:text="Based On  zero Ratings"/>
+      <TextView
+          android:id="@+id/tvSaloonReview"
+        android:layout_below="@+id/tvRatings"
+          android:textColor="@color/black"
+          android:textSize="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+          android:padding="@dimen/_5sdp"
+          android:fontFamily="@font/teko_semibold"
+        android:layout_height="wrap_content"
+        android:text="Saloon Review"/>
+       <TextView
+        android:layout_below="@+id/tvSaloonReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:textSize="@dimen/_16sdp"
+           android:padding="@dimen/_2sdp"
+        android:text="Saloon And Beauti Services for Ladies"/>
+
+    <TextView
+        android:id="@+id/tvRatingsValue"
+        android:layout_toRightOf="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/tvRatings"
+        android:textSize="@dimen/_18sdp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:text="0"/>
+
+</RelativeLayout>
