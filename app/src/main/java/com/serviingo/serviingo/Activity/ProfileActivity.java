@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -13,10 +14,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+import com.irozon.sneaker.Sneaker;
 import com.rjesture.startupkit.AppTools;
 import com.serviingo.serviingo.Adapterr.CitySpinnerAdapter;
-import com.serviingo.serviingo.Adapterr.StateSpinnerAdapter;
+import com.serviingo.serviingo.Adapterr.StateSpinnerUpdateAdapter;
 import com.serviingo.serviingo.CommonControlerApi.DoMyprofilePresenter;
+import com.serviingo.serviingo.CommonControlerApi.DoMyprofileUpdatePresenter;
 import com.serviingo.serviingo.Database.AppSettings;
 import com.serviingo.serviingo.R;
 import com.serviingo.serviingo.Rtrofit.ApiClientt;
@@ -24,6 +28,7 @@ import com.serviingo.serviingo.model.CategoryModel;
 import com.serviingo.serviingo.model.CityModel;
 import com.serviingo.serviingo.model.StateModel;
 import com.serviingo.serviingo.modelrepo.Responsee.Profile_Repo;
+import com.serviingo.serviingo.modelrepo.request.UpdateProfile_request;
 import com.serviingo.serviingo.storage.SharedPrefManager;
 import com.serviingo.serviingo.utils.AppUrls;
 import com.serviingo.serviingo.utils.AppUtils;
@@ -45,7 +50,7 @@ import retrofit2.Response;
 
 import static com.serviingo.serviingo.R.drawable.globalloader;
 
-public class ProfileActivity extends BaseActivity implements View.OnClickListener, DoMyprofilePresenter.DoMyprofileView {
+public class ProfileActivity extends BaseActivity implements View.OnClickListener, DoMyprofilePresenter.DoMyprofileView, DoMyprofileUpdatePresenter.DoMyprofileUpdateView {
 
     TextView btn_addresssDetails;
     ImageView imageView, ivBack, ivNav;
@@ -55,15 +60,21 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
     DoMyprofilePresenter presenter;
     CircleImageView circleImageView;
 
-    EditText etprofile_name,etprofileEmail,etprofilePhone,ed_houseno,ed_nearby,ed_pincode;
+    EditText etprofile_name, etprofileEmail, etprofilePhone, ed_houseno, ed_nearby, ed_pincode;
 
 
     StateModel stateModel;
     ArrayList<StateModel> stateModelList;
     ArrayList<CityModel> cityModelList;
 
-    Spinner spinner_state, spinner_city;
-    String state_id, city_id;
+    Spinner spinner_state, spinner_city, genderSpinner;
+    String state_id, city_id, genderr;
+    String[] gender = {"Select Gender", "Male", "Female", "Transgender "};//array of strings used to populate the spinner
+    DoMyprofileUpdatePresenter doMyprofileUpdatePresenter;
+
+
+    String genderid;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,18 +84,20 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
         setui();
         DoMyprofile();
+        getState();
+
     }
 
     private void DoMyprofile() {
-        presenter=new DoMyprofilePresenter(this);
+        presenter = new DoMyprofilePresenter(this);
         presenter.DoMyprofil(this);
-        getState();
 
     }
 
     private void setui() {
 
         btn_addresssDetails = findViewById(R.id.btn_addresssDetails);
+        doMyprofileUpdatePresenter = new DoMyprofileUpdatePresenter(this);
 
 
         ivNav = findViewById(R.id.ivNav);
@@ -110,11 +123,32 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
         spinner_state = findViewById(R.id.spinner_state);
         spinner_city = findViewById(R.id.spinner_city);
+        genderSpinner = findViewById(R.id.genderSpinner);
 
 
-
-        circleImageView=findViewById(R.id.ivProfilePic);
+        circleImageView = findViewById(R.id.ivProfilePic);
         setOnClickListener();
+
+        ArrayAdapter<String> aa = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, gender);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//Setting the ArrayAdapter data on the Spinner
+        genderSpinner.setAdapter(aa);
+        genderSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                genderr = parent.getItemAtPosition(position).toString().trim();
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
     }
 
     private void setOnClickListener() {
@@ -137,10 +171,9 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btn_addresssDetails:
-
-                Toast.makeText(this, "check", Toast.LENGTH_SHORT).show();
+                updateProfile();
 
                 break;
 
@@ -193,7 +226,6 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
                 break;
 
 
-
         }
     }
 
@@ -201,7 +233,7 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
     public void onDoMyprofileError(String message) {
         AppTools.hideGifDialog();
 
-        Log.e("onDoMyprofileError",message);
+        Log.e("onDoMyprofileError", message);
 
     }
 
@@ -209,16 +241,38 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
     public void onDoMyprofileSuccess(Profile_Repo response, String message) {
         AppTools.hideGifDialog();
 
-        if (message.equalsIgnoreCase("ok"))
-        {
+        if (message.equalsIgnoreCase("ok")) {
             Picasso.get().load(response.getData().getProfile().getProfilePhotoUrl()).into(circleImageView);
             etprofile_name.setText(response.getData().getProfile().getName());
 
             etprofileEmail.setText(response.getData().getProfile().getEmail());
             etprofilePhone.setText(response.getData().getProfile().getMobileNumber());
+            genderid = response.getData().getProfile().getGender().trim();
+
+
+            if (genderid.equalsIgnoreCase("Male")) {
+                genderSpinner.setSelection(1);
+
+            } else if (genderid.equalsIgnoreCase("Female")) {
+
+                genderSpinner.setSelection(2);
+
+            } else if (genderid.equalsIgnoreCase("Transgender")) {
+
+                genderSpinner.setSelection(3);
+            } else {
+
+                genderSpinner.setSelection(0);
+            }
+            state_id=response.getData().getProfile().getStateId().trim();
+
+            city_id=response.getData().getProfile().getCityId().trim();
+            ed_houseno.setText(response.getData().getProfile().getAddress().trim());
+            ed_nearby.setText(response.getData().getProfile().getLandmark().trim());
+            ed_pincode.setText(response.getData().getProfile().getPincode().trim());
+
 
         }
-
 
 
     }
@@ -227,10 +281,9 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
     public void onDoMyprofileFailure(Throwable t) {
         AppTools.hideGifDialog();
 
-        Log.e("onDoMyprofileFailure",t.getLocalizedMessage());
+        Log.e("onDoMyprofileFailure", t.getLocalizedMessage());
 
     }
-
 
 
     private void getState() {
@@ -288,7 +341,8 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
                         e.printStackTrace();
                     }
 
-                    StateSpinnerAdapter coinSpinnerAdapter = new StateSpinnerAdapter(getApplicationContext(), stateModelList);
+                    StateSpinnerUpdateAdapter coinSpinnerAdapter = new StateSpinnerUpdateAdapter(getApplicationContext(), stateModelList,state_id);
+
                     spinner_state.setAdapter(coinSpinnerAdapter);
                     spinner_state.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
@@ -299,7 +353,7 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
                             state_id = stateModelList.get(position).getId();
 
 
-                         GetCity(state_id);
+                            GetCity(state_id);
 
                         }
 
@@ -323,6 +377,7 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
 
     }
+
     private void GetCity(String id) {
         cityModelList = new ArrayList<>();
         CityModel stateModel = new CityModel();
@@ -399,4 +454,83 @@ public class ProfileActivity extends BaseActivity implements View.OnClickListene
 
     }
 
+    @Override
+    public void onDoMyprofileUpdateError(String message) {
+        Sneaker.with(this)
+                .setTitle(message)
+                .setMessage("")
+                .sneakError();
+        AppTools.hideGifDialog();
+
+
+    }
+
+    @Override
+    public void onDoMyprofileUpdateSuccess(Profile_Repo response, String message) {
+     /*   Sneaker.with(this)
+                .setTitle(message)
+                .setMessage("")
+                .sneakError();*/
+        AppTools.hideGifDialog();
+
+        if (message.equalsIgnoreCase("ok")) {
+
+            if (message.equalsIgnoreCase("ok")) {
+
+                Toast.makeText(this, response.getMessage() + "", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, MainActivity.class));
+            }
+
+
+        }
+
+    }
+
+    @Override
+    public void onDoMyprofileUpdateFailure(Throwable t) {
+        Sneaker.with(this)
+                .setTitle(t.getLocalizedMessage())
+                .setMessage("")
+                .sneakError();
+        AppTools.hideGifDialog();
+
+    }
+
+
+    private void updateProfile() {
+        //EditText etprofile_name,etprofileEmail,etprofilePhone,ed_houseno,ed_nearby,ed_pincode;
+
+        String name = etprofile_name.getText().toString().trim();
+        String email = etprofileEmail.getText().toString().trim();
+        String phone = etprofilePhone.getText().toString().trim();
+
+        if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            Sneaker.with(this)
+                    .setTitle("Enter your Valid email!")
+                    .setMessage("")
+                    .sneakError();
+        } else if (genderr.equalsIgnoreCase("Select Gender")) {
+            Sneaker.with(this)
+                    .setTitle("Select Gender!")
+                    .setMessage("")
+                    .sneakError();
+        } else if (state_id.equalsIgnoreCase("00")) {
+            Sneaker.with(this)
+                    .setTitle("Select  State!")
+                    .setMessage("")
+                    .sneakError();
+        } else if (city_id.equalsIgnoreCase("00")) {
+            Sneaker.with(this)
+                    .setTitle("Select  City!")
+                    .setMessage("")
+                    .sneakError();
+        } else {
+            AppTools.showGifDialog(mActivity, globalloader);
+
+            UpdateProfile_request updateProfile_request = new UpdateProfile_request(name, genderr, email, phone, state_id, city_id,
+                    ed_houseno.getText().toString().trim(), ed_nearby.getText().toString().trim(), ed_pincode.getText().toString().trim());
+            doMyprofileUpdatePresenter.DoMyprofil(ProfileActivity.this, updateProfile_request);
+        }
+
+    }
 }

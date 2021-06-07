@@ -3,8 +3,8 @@ com/serviingo/serviingo/Activity/TermsandCondition.java
  com.serviingo.serviingo.Activity.TermsandCondition$1
 com/serviingo/serviingo/Activity/helpCenter.java
  com.serviingo.serviingo.Activity.helpCenter
-com/serviingo/serviingo/Rtrofit/ApiManager.java
- com.serviingo.serviingo.Rtrofit.ApiManager
+com/serviingo/serviingo/Activity/ChatActivity.java
+ com.serviingo.serviingo.Activity.ChatActivity
 com/serviingo/serviingo/Activity/fragFAQ.java
  com.serviingo.serviingo.Activity.fragFAQ
 com/serviingo/serviingo/Activity/primaryActivity.java
@@ -18,8 +18,8 @@ com/serviingo/serviingo/Activity/Addtocart.java
  com.serviingo.serviingo.Activity.Addtocart$2
 com/serviingo/serviingo/Activity/fragHimSalon.java
  com.serviingo.serviingo.Activity.fragHimSalon
-com/serviingo/serviingo/Rtrofit/ApiClientt.java
- com.serviingo.serviingo.Rtrofit.ApiClientt
+com/serviingo/serviingo/utils/AppUrls.java
+ com.serviingo.serviingo.utils.AppUrls
 com/serviingo/serviingo/Activity/RefundPolicy.java
  com.serviingo.serviingo.Activity.RefundPolicy
  com.serviingo.serviingo.Activity.RefundPolicy$1
@@ -142,6 +142,10 @@ com/serviingo/serviingo/Activity/TestingAgreeCulturalUi.java
  com.serviingo.serviingo.Activity.TestingAgreeCulturalUi
 com/serviingo/serviingo/Activity/WelcomeActivity.java
  com.serviingo.serviingo.Activity.WelcomeActivity
+com/serviingo/serviingo/CommonControlerApi/UserRegisterPresenter.java
+ com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter
+ com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter$1
+ com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter$UserRegisterView
 com/serviingo/serviingo/Activity/myBooking.java
  com.serviingo.serviingo.Activity.myBooking
  com.serviingo.serviingo.Activity.myBooking$1
@@ -153,6 +157,8 @@ com/serviingo/serviingo/CommonControlerApi/DoLogoutPresenter.java
  com.serviingo.serviingo.CommonControlerApi.DoLogoutPresenter
  com.serviingo.serviingo.CommonControlerApi.DoLogoutPresenter$1
  com.serviingo.serviingo.CommonControlerApi.DoLogoutPresenter$DoLogoutView
+com/serviingo/serviingo/Common/Preferences.java
+ com.serviingo.serviingo.Common.Preferences
 com/serviingo/serviingo/Activity/SelectService.java
  com.serviingo.serviingo.Activity.SelectService
 com/serviingo/serviingo/Activity/ChangePasswordActivity.java
@@ -272,33 +278,36 @@ com/serviingo/serviingo/Activity/ReviewRatingActivity.java
  com.serviingo.serviingo.Activity.ReviewRatingActivity$CustomDialogClass
  com.serviingo.serviingo.Activity.ReviewRatingActivity$ViewDialog
  com.serviingo.serviingo.Activity.ReviewRatingActivity$ViewDialog$1
-com/serviingo/serviingo/Rtrofit/UserService.java
- com.serviingo.serviingo.Rtrofit.UserService
-com/serviingo/serviingo/model/CityModel.java
- com.serviingo.serviingo.model.CityModel
-com/serviingo/serviingo/BuildConfig.java
- com.serviingo.serviingo.BuildConfig
-com/serviingo/serviingo/Common/Preferences.java
- com.serviingo.serviingo.Common.Preferences
-com/serviingo/serviingo/CommonControlerApi/UserRegisterPresenter.java
- com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter
- com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter$1
- com.serviingo.serviingo.CommonControlerApi.UserRegisterPresenter$UserRegisterView
-com/serviingo/serviingo/Activity/ChatActivity.java
- com.serviingo.serviingo.Activity.ChatActivity
 com/serviingo/serviingo/Activity/MyWalletActivity.java
  com.serviingo.serviingo.Activity.MyWalletActivity
  com.serviingo.serviingo.Activity.MyWalletActivity$1
  com.serviingo.serviingo.Activity.MyWalletActivity$WalletAdapter
  com.serviingo.serviingo.Activity.MyWalletActivity$WalletAdapter$WalletHolder
-com/serviingo/serviingo/utils/AppUrls.java
- com.serviingo.serviingo.utils.AppUrls
+com/serviingo/serviingo/model/CityModel.java
+ com.serviingo.serviingo.model.CityModel
+com/serviingo/serviingo/BuildConfig.java
+ com.serviingo.serviingo.BuildConfig
+com/serviingo/serviingo/CommonControlerApi/DoMyprofileUpdatePresenter.java
+ com.serviingo.serviingo.CommonControlerApi.DoMyprofileUpdatePresenter
+ com.serviingo.serviingo.CommonControlerApi.DoMyprofileUpdatePresenter$1
+ com.serviingo.serviingo.CommonControlerApi.DoMyprofileUpdatePresenter$DoMyprofileUpdateView
+com/serviingo/serviingo/Rtrofit/ApiManager.java
+ com.serviingo.serviingo.Rtrofit.ApiManager
+com/serviingo/serviingo/Rtrofit/ApiClientt.java
+ com.serviingo.serviingo.Rtrofit.ApiClientt
+com/serviingo/serviingo/Rtrofit/UserService.java
+ com.serviingo.serviingo.Rtrofit.UserService
+com/serviingo/serviingo/modelrepo/request/UpdateProfile_request.java
+ com.serviingo.serviingo.modelrepo.request.UpdateProfile_request
+com/serviingo/serviingo/Adapterr/StateSpinnerUpdateAdapter.java
+ com.serviingo.serviingo.Adapterr.StateSpinnerUpdateAdapter
 com/serviingo/serviingo/Activity/ProfileActivity.java
  com.serviingo.serviingo.Activity.ProfileActivity
  com.serviingo.serviingo.Activity.ProfileActivity$1
- com.serviingo.serviingo.Activity.ProfileActivity$1$1
  com.serviingo.serviingo.Activity.ProfileActivity$2
  com.serviingo.serviingo.Activity.ProfileActivity$2$1
+ com.serviingo.serviingo.Activity.ProfileActivity$3
+ com.serviingo.serviingo.Activity.ProfileActivity$3$1
 com/serviingo/serviingo/Activity/MainActivity.java
  com.serviingo.serviingo.Activity.MainActivity
  com.serviingo.serviingo.Activity.MainActivity$1

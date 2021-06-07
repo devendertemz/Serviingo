@@ -4,6 +4,7 @@ package com.serviingo.serviingo.Rtrofit;
 import com.serviingo.serviingo.modelrepo.Responsee.Profile_Repo;
 import com.serviingo.serviingo.modelrepo.Responsee.VandorRepo;
 import com.serviingo.serviingo.modelrepo.request.Changepassword_request;
+import com.serviingo.serviingo.modelrepo.request.UpdateProfile_request;
 import com.serviingo.serviingo.modelrepo.request.UserReg_Request;
 
 import okhttp3.ResponseBody;
@@ -14,6 +15,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface UserService {
@@ -67,6 +69,10 @@ public interface UserService {
 
     @POST("update/password")
     Call<ResponseBody> Doupdatepassword(@Body Changepassword_request credential);
+
+    @PUT("update/profile")
+    Call<Profile_Repo> DoMyprofileUpdate(@Body UpdateProfile_request credential);
+
     /*  //getcategories
       @GET("getcategories")
       Call<List<CategoryListModel>> getcategories();
